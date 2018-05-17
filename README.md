@@ -1,7 +1,7 @@
 # Java-Seminar
-<p>ppt file for java seminar<p>
+<p>ppt file for java seminar</p>
 
-index :
+<p>index :</p>
 1st week 	: installing Java sdk & Eclipse IDE<br>
 2nd week 1	: variant, operator, console I/O<br>
 2nd week 2	: scope, flow control, array<br>
