@@ -7,3 +7,4 @@
 2nd week 2	: scope, flow control, array<br>
 3rd week 1	: class, method/constructor,extends,interface,parameter delievering<br>
 3rd week 2	: static, access modifier<br>
+4th week 1	: exception control, threading<br>
