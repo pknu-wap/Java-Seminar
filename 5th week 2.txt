@@ -1,0 +1,51 @@
+
+import java.util.Scanner;
+
+public class Default{
+    public static void main(String[] args) {
+        Scanner scan=new Scanner(System.in);
+        int[][] field;
+        int N=scan.nextInt();
+        field=new int[N][N];
+        int direction=2;
+        int X=0,Y=0;
+        int length=0;
+        int lvl=0;
+        boolean isDown=true;
+        for(int i=0;i<N*N;i++) {
+            field[X][Y]=N*N-i;
+            lvl+=1;
+            if(lvl==N-length) {
+                direction--;
+                if(direction==-1) direction=3;
+                lvl=0;
+                if(isDown) {
+                    length++;
+                    isDown=false;
+                }else {
+                    isDown=true;
+                }
+            }
+            switch(direction) {
+            case 0:
+                Y--;
+                break;
+            case 1:
+                X++;
+                break;
+            case 2:
+                Y++;
+                break;
+            case 3:
+                X--;
+                break;
+            }
+        }
+        for(int i=0;i<N;i++) {
+            for(int j=0;j<N;j++) {
+                System.out.printf(" %4d",field[j][i]);
+            }
+            System.out.println("");
+        }
+    }
+}
